@@ -1,0 +1,39 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 24px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .input-wrapper {
+    width: 100%;
+  }
+
+  .divider {
+    margin: 64px 0;
+  }
+
+  .button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .result {
+    font-size: 56px;
+  }
+}
