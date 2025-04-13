@@ -17,18 +17,19 @@ const Container = styled.div`
 
 const Card = styled.div`
   background-color: white;
-  padding: 56px;
+  padding: 43px 56px;
   border-radius: 24px 24px 200px 24px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 840px;
-  margin: 24px;
+  margin: 20px 0 100px 0;
 `
 
 const InputGroup = styled.div`
   display: flex;
   gap: 32px;
-  margin-bottom: 48px;
+  margin: 10px 0 33px 0;
+  // padding-bottom:25px;
 `
 
 const InputWrapper = styled.div`
@@ -48,7 +49,7 @@ const Label = styled.label`
 
 const Input = styled.input`
   width: 100%;
-  padding: 12px 24px;
+  padding: 17px 24px;
   border: 1px solid hsl(0, 0%, 86%);
   border-radius: 8px;
   font-size: 32px;
@@ -61,7 +62,10 @@ const Input = styled.input`
   }
 
   &::placeholder {
-    color: hsl(0, 0%, 86%);
+    color: hsl(0, 0.00%, 50.60%);
+    font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+
   }
 `
 
@@ -69,7 +73,7 @@ const Divider = styled.div`
   position: relative;
   height: 1px;
   background-color: hsl(0, 0%, 86%);
-  margin: 32px 0;
+  margin: 50px 0 35px 0;
 `
 
 const Button = styled.button`
@@ -94,14 +98,18 @@ const Button = styled.button`
 `
 
 const Result = styled.div`
+  padding: 12px 0 12px 0;
   font-size: 104px;
   font-weight: 800;
+  letter-spacing: -2px;
   font-style: italic;
   line-height: 1.1;
 `
 
 const Span = styled.span`
   color: hsl(259, 100%, 65%);
+  letter-spacing: 1rem;
+  margin-right:-5px;
 `
 
 const ErrorMessage = styled.p`
@@ -265,13 +273,13 @@ function App() {
 
         <Result>
           <div>
-            <Span>{age.years}</Span> years
+            <Span>{age.years}</Span>years
           </div>
           <div>
-            <Span>{age.months}</Span> months
+            <Span>{age.months}</Span>months
           </div>
           <div>
-            <Span>{age.days}</Span> days
+            <Span>{age.days}</Span>days
           </div>
         </Result>
       </Card>
